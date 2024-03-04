@@ -7,15 +7,17 @@
         "MusicPlayer",
         "VideoPlayer"
     ],
-    "repository": "https://github.com/Fawziimostafa/xvghytds",
+    "repository": "https://github.com/AlmortageLL/Qui",
     "env": {
         "SESSION": {
             "description": "Pyrogram String Session",
             "required": false
+            "value": ""            
         },
         "API_ID": {
             "description": "Your api id from my.telegram.org/apps",
             "required": false
+            "value": ""            
         },
         "HNDLR": {
             "description": "Set handler",
@@ -25,26 +27,24 @@
         "API_HASH": {
             "description": "Your api hash from my.telegram.org/apps",
             "required": false
+            "value": ""            
         },
         "SUDO_USERS": {
             "description": "User ID list user counts as admin everywhere(separator using space)",
             "required": false
+            "value": ""            
         }
     },
-    "addons": [],
     "buildpacks": [
-        {
-            "url": "heroku/python"
-        },
-        {
-            "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
-        }
-    ],
-    "formation": {
-        "worker": {
-            "quantity": 1,
-            "size": "free"
-        }
-    },
-    "stack": "container"
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "container"
 }
