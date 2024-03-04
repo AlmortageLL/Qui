@@ -1,13 +1,16 @@
 {
-    "name": "VcUserBot",
-    "description": "Telegram UserBot for Video Chat.",
-    "logo": "https://telegra.ph/file/5e449920b06c24d39cc5f.jpg",
+    "name": "ᴀɴᴏɴ ダ ᴍᴜsɪᴄ",
+    "description": "A Telegram Music Player Bot, written in Python with Pyrogram and Py-Tgcalls.",
+    "logo": "https://te.legra.ph/file/b8a0c1a00db3e57522b53.jpg",
     "keywords": [
-        "Telegram",
-        "MusicPlayer",
-        "VideoPlayer"
+    "python3",
+    "telegram",
+    "bot",
+    "AnonX",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
     ],
-    "repository": "https://github.com/AlmortageLL/Qui",
     "env": {
         "SESSION": {
             "description": "Pyrogram String Session",
@@ -34,6 +37,8 @@
             "required": false
             "value": ""            
         }
+    },
+          }
     },
     "buildpacks": [
           {
